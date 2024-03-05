@@ -5945,7 +5945,7 @@ var RemixCache = class {
       await this._lruCleanup();
       return await cache.put(request, toBeCachedRes.clone());
     } catch (error) {
-      if (true)
+      if (false)
         console.error("Failed to put to cache:", error);
     }
   }
@@ -6219,7 +6219,7 @@ var methodToColorMap = {
   groupEnd: null
   // No colored prefix on groupEnd
 };
-var logger = false ? (() => {
+var logger = true ? (() => {
   const api = {};
   const loggerMethods = Object.keys(methodToColorMap);
   for (const key of loggerMethods) {
@@ -6376,7 +6376,7 @@ var PrecacheHandler = class extends MessageHandler {
     const routes2 = Object.values(manifest?.routes || {});
     for (const route of routes2) {
       if (route.id.includes("$")) {
-        if (true)
+        if (false)
           logger.info("Skipping parametrized route:", route.id);
         continue;
       }
@@ -6419,7 +6419,7 @@ var PrecacheHandler = class extends MessageHandler {
           if (map.includes(true))
             continue;
         } else {
-          if (true)
+          if (false)
             logger.error("Invalid ignoredRoutes type:", this._ignoredFiles);
         }
       } else if (typeof this._ignoredFiles === "function") {
@@ -6440,7 +6440,7 @@ var PrecacheHandler = class extends MessageHandler {
       }
       if (route.imports) {
         for (const assetUrl of route.imports) {
-          if (true) {
+          if (false) {
             logger.groupCollapsed("Caching asset: ", assetUrl);
             logger.log("Is index:", route.index || false);
             logger.log("Parent ID:", route.parentId);
@@ -6454,7 +6454,7 @@ var PrecacheHandler = class extends MessageHandler {
           cachePromises.set(assetUrl, cacheAsset(assetUrl));
         }
       }
-      if (true)
+      if (false)
         logger.info("Caching document:", pathname);
       const response = await fetch(pathname);
       cachePromises.set(
@@ -6462,13 +6462,13 @@ var PrecacheHandler = class extends MessageHandler {
         // @ts-expect-error
         documentCache2.put(pathname, response).catch((error) => {
           if (error instanceof TypeError) {
-            if (true)
+            if (false)
               logger.error(`TypeError when caching document ${pathname}:`, error.message);
           } else if (error instanceof DOMException) {
-            if (true)
+            if (false)
               logger.error(`DOMException when caching document ${pathname}:`, error.message);
           } else {
-            if (true)
+            if (false)
               logger.error(`Failed to cache document ${pathname}:`, error);
           }
         })
@@ -6486,13 +6486,13 @@ var PrecacheHandler = class extends MessageHandler {
           // @ts-expect-error
           dataCache2.put(url, data2).catch((error) => {
             if (error instanceof TypeError) {
-              if (true)
+              if (false)
                 logger.error(`TypeError when caching data ${pathname}:`, error.message);
             } else if (error instanceof DOMException) {
-              if (true)
+              if (false)
                 logger.error(`DOMException when caching data ${pathname}:`, error.message);
             } else {
-              if (true)
+              if (false)
                 logger.error(`Failed to cache data ${pathname}:`, error);
             }
           })
@@ -6509,13 +6509,13 @@ var PrecacheHandler = class extends MessageHandler {
       const response = await fetch(assetUrl);
       return assetCache2.put(assetUrl, response).catch((error) => {
         if (error instanceof TypeError) {
-          if (true)
+          if (false)
             logger.error(`TypeError when caching asset ${assetUrl}:`, error.message);
         } else if (error instanceof DOMException) {
-          if (true)
+          if (false)
             logger.error(`DOMException when caching asset ${assetUrl}:`, error.message);
         } else {
-          if (true)
+          if (false)
             logger.error(`Failed to cache asset ${assetUrl}:`, error);
         }
       });
