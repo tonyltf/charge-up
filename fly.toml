@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for charge-up on 2024-03-06T00:45:26+08:00
+# fly.toml app configuration file generated for charge-up-empty-frog-602 on 2024-03-07T01:48:10+08:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'charge-up'
+app = 'charge-up-empty-frog-602'
 primary_region = 'hkg'
 
 [build]

@@ -6598,7 +6598,7 @@ var route1 = __toESM(require_manifest_webmanifest());
 var route2 = __toESM(require_index());
 
 // assets-module:@remix-pwa/dev?assets
-var assets = ["/build/root-DWRU6QX6.js", "/build/manifest-394926F1.js", "/build/entry.client-IOM5RHU5.js", "/build/routes/manifest[.]webmanifest-JH7MBYEB.js", "/build/routes/_index-EJHTY2DI.js", "/build/_shared/chunk-R7XMM2IK.js", "/build/_shared/chunk-Q3IECNXJ.js", "/build/_shared/chunk-7ML2NXR6.js"];
+var assets = ["/build/root-W72DZCZP.js", "/build/manifest-B8B618C6.js", "/build/entry.client-Z7FSGSDI.js", "/build/routes/manifest[.]webmanifest-JH7MBYEB.js", "/build/routes/_index-EJHTY2DI.js", "/build/_shared/chunk-R7XMM2IK.js", "/build/_shared/chunk-Q3IECNXJ.js", "/build/_shared/chunk-DGMYAAIN.js"];
 
 // entry-module:@remix-pwa/build/magic
 var routes = {
@@ -6629,12 +6629,12 @@ var routes = {
 };
 var entry = { module: entry_worker_exports };
 
-// node_modules/.pnpm/@remix-pwa+worker-runtime@2.0.8_@remix-run+server-runtime@2.8.0/node_modules/@remix-pwa/worker-runtime/dist/src/utils/handle-request.js
+// node_modules/.pnpm/@remix-pwa+worker-runtime@2.0.8/node_modules/@remix-pwa/worker-runtime/dist/src/utils/handle-request.js
 init_router();
 var import_mode = __toESM(require_mode(), 1);
 var import_responses2 = __toESM(require_responses(), 1);
 
-// node_modules/.pnpm/@remix-pwa+worker-runtime@2.0.8_@remix-run+server-runtime@2.8.0/node_modules/@remix-pwa/worker-runtime/dist/src/utils/request.js
+// node_modules/.pnpm/@remix-pwa+worker-runtime@2.0.8/node_modules/@remix-pwa/worker-runtime/dist/src/utils/request.js
 init_router();
 function clone(_object) {
   const init = {};
@@ -6692,7 +6692,7 @@ function isLoaderRequest2(request) {
   return isMethod2(request, ["get"]) && url.searchParams.get("_data");
 }
 
-// node_modules/.pnpm/@remix-pwa+worker-runtime@2.0.8_@remix-run+server-runtime@2.8.0/node_modules/@remix-pwa/worker-runtime/dist/src/utils/response.js
+// node_modules/.pnpm/@remix-pwa+worker-runtime@2.0.8/node_modules/@remix-pwa/worker-runtime/dist/src/utils/response.js
 var import_responses = __toESM(require_responses(), 1);
 function errorResponseToJson(errorResponse) {
   return (0, import_responses.json)(errorResponse.error || { message: "Unexpected Server Error" }, {
@@ -6707,7 +6707,7 @@ function isRemixResponse(response) {
   return Array.from(response.headers.keys()).some((key) => key.toLowerCase().startsWith("x-remix-"));
 }
 
-// node_modules/.pnpm/@remix-pwa+worker-runtime@2.0.8_@remix-run+server-runtime@2.8.0/node_modules/@remix-pwa/worker-runtime/dist/src/utils/handle-request.js
+// node_modules/.pnpm/@remix-pwa+worker-runtime@2.0.8/node_modules/@remix-pwa/worker-runtime/dist/src/utils/handle-request.js
 async function handleRequest({ defaultHandler: defaultHandler2, errorHandler, event, loadContext, routes: routes2 }) {
   const url = new URL(event.request.url);
   const routeId = url.searchParams.get("_data");
@@ -6805,7 +6805,7 @@ function responseHandler(response) {
   return response;
 }
 
-// node_modules/.pnpm/@remix-pwa+worker-runtime@2.0.8_@remix-run+server-runtime@2.8.0/node_modules/@remix-pwa/worker-runtime/dist/src/service-worker.internal.js
+// node_modules/.pnpm/@remix-pwa+worker-runtime@2.0.8/node_modules/@remix-pwa/worker-runtime/dist/src/service-worker.internal.js
 var _self = self;
 function createContext(event) {
   const context = entry.module.getLoadContext?.(event) || {};
