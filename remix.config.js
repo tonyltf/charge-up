@@ -1,7 +1,8 @@
 /** @type {import('@remix-pwa/dev').WorkerConfig} */
+/** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {
-  appDirectory: "app",
-  assetsBuildDirectory: "build",
+  // appDirectory: "app",
+  // assetsBuildDirectory: "build",
   cacheDirectory: "./node_modules/.cache/remix",
   future: {
     /* any enabled future flags */
@@ -9,8 +10,6 @@ module.exports = {
   ignoredRouteFiles: ["**/*.css"],
   plugins: [
     // any enabled plugins
-    // "@remix-pwa/dev",
-    // "@remix-pwa/worker",
   ],
   publicPath: "/build/",
   serverBuildPath: "build/index.js",
