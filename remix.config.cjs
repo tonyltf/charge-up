@@ -1,9 +1,10 @@
 /** @type {import('@remix-pwa/dev').WorkerConfig} */
 module.exports = {
     appDirectory: "app",
-    assetsBuildDirectory: "public/build",
+    assetsBuildDirectory: "build",
     future: {
       /* any enabled future flags */
+      v2_dev: true,
     },
     ignoredRouteFiles: ["**/*.css"],
     publicPath: "/build/",
