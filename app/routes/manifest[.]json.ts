@@ -71,6 +71,6 @@ export const loader = async () => {
         'Cache-Control': 'public, max-age=600',
         'Content-Type': 'application/manifest+json',
       },
-    }
+    },
   );
 };

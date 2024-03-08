@@ -1,8 +1,8 @@
-import { json } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { json } from '@remix-run/node';
+import { useLoaderData } from '@remix-run/react';
 // existing imports
 
-import { DUMMY_CAR_PARK } from "../data/index";
+import { DUMMY_CAR_PARK } from '../data/index';
 
 type Props = { params: { carParkId: string } };
 

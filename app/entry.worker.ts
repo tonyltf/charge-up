@@ -61,6 +61,6 @@ const handler = new RemixNavigationHandler({
   documentCache,
 });
 
-self.addEventListener('message', event => {
+self.addEventListener('message', (event) => {
   event.waitUntil(handler.handle(event));
 });
