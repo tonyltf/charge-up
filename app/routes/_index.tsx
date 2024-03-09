@@ -1,4 +1,4 @@
-import type { MetaFunction } from '@remix-run/cloudflare';
+import { type MetaFunction, json } from '@remix-run/cloudflare';
 
 export const meta: MetaFunction = () => {
   return [
@@ -8,6 +8,9 @@ export const meta: MetaFunction = () => {
       content: 'Welcome to Remix! Using Vite and Cloudflare!',
     },
   ];
+};
+export const loader = async () => {
+  return json({ ok: true });
 };
 
 export default function Index() {
