@@ -6,7 +6,7 @@ module.exports = {
   browserNodeBuiltinsPolyfill: {
     modules: {
       buffer: true, // Provide a JSPM polyfill
-      fs: "empty", // Provide an empty polyfill
+      fs: 'empty', // Provide an empty polyfill
     },
     globals: {
       Buffer: true,
@@ -30,4 +30,3 @@ module.exports = {
   worker: '@remix-pwa/worker-runtime',
   workerName: 'entry.worker',
 };
-

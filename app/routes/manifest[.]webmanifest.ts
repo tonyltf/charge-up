@@ -1,4 +1,4 @@
-import { json } from "@remix-run/cloudflare";
+import { json } from '@remix-run/cloudflare';
 
 export const loader = async () => {
   return json(
@@ -71,6 +71,6 @@ export const loader = async () => {
         'Cache-Control': 'public, max-age=600',
         'Content-Type': 'application/manifest+json',
       },
-    }
+    },
   );
 };
