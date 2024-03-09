@@ -6610,7 +6610,7 @@ var route1 = __toESM(require_manifest_webmanifest());
 var route2 = __toESM(require_index());
 
 // assets-module:@remix-pwa/dev?assets
-var assets = ["/build/root-6YSTZTVX.js", "/build/manifest-FE08DE29.js", "/build/entry.client-KGNIKAQE.js", "/build/routes/manifest[.]webmanifest-JH7MBYEB.js", "/build/routes/_index-YQMVJNJD.js", "/build/_shared/chunk-R7XMM2IK.js", "/build/_shared/chunk-Q3IECNXJ.js", "/build/_shared/chunk-KTWSFPSR.js"];
+var assets = ["/build/root-JL32OGBR.js", "/build/manifest-586699D3.js", "/build/entry.client-5OCPD4J7.js", "/build/routes/manifest[.]webmanifest-BT4JH5L6.js", "/build/routes/_index-HYSURQWH.js", "/build/_shared/chunk-Z5CB7TCI.js", "/build/_shared/chunk-NY4PGOYD.js", "/build/_shared/chunk-CLJXFZQD.js"];
 
 // entry-module:@remix-pwa/build/magic
 var routes = {
