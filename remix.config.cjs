@@ -30,3 +30,4 @@ module.exports = {
   worker: '@remix-pwa/worker-runtime',
   workerName: 'entry.worker',
 };
+
