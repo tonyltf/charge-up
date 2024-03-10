@@ -21,14 +21,14 @@ module.exports = {
     // any enabled plugins
   ],
   publicPath: '/build/',
-  server: "./server.ts",
+  server: './server.ts',
   // serverBuildPath: 'build/index.js',
-  serverConditions: ["workerd", "worker", "browser"],
+  serverConditions: ['workerd', 'worker', 'browser'],
   serverDependenciesToBundle: [/^(?!(__STATIC_CONTENT_MANIFEST)$).*$/u, /@remix-pwa\/.*/],
-  serverMainFields: ["browser", "module", "main"],
+  serverMainFields: ['browser', 'module', 'main'],
   serverMinify: true,
-  serverModuleFormat: "esm",
-  serverPlatform: "neutral",
+  serverModuleFormat: 'esm',
+  serverPlatform: 'neutral',
 
   // for Remix PWA
   entryWorkerFile: '<appDir>/entry.worker.ts',
