@@ -18,5 +18,4 @@ startTransition(() => {
   );
 });
 
-
-loadServiceWorker()
+loadServiceWorker();
