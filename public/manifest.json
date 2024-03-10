@@ -1,16 +1,16 @@
 {
-  "short_name": "YourApp",
-  "name": "Your App Name",
+  "short_name": "charge-up",
+  "name": "ChargeUp",
   "icons": [
     {
-      "src": "icons/icon-192x192.png",
+      "src": "icons/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "icons/icon-512x512.png",
+      "src": "icons/android-chrome-256x256.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "256x256"
     }
   ],
   "start_url": ".",
