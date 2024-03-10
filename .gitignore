@@ -2,6 +2,9 @@ node_modules
 
 /.cache
 /build
-/public
-/public/*
+/public/build
 .env
+
+.wrangler
+
+.dev.vars
