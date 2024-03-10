@@ -47,6 +47,9 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  remix-cloudflare-module-workers:
+    specifier: ^1.0.0
+    version: 1.0.0(@remix-run/cloudflare-workers@2.8.1)(@remix-run/cloudflare@2.8.1)
 
 devDependencies:
   '@cloudflare/workers-types':
@@ -1348,6 +1351,22 @@ packages:
       typescript:
         optional: true
     dependencies:
+      '@cloudflare/workers-types': 4.20240222.0
+      '@remix-run/cloudflare': 2.8.1(@cloudflare/workers-types@4.20240222.0)(typescript@5.4.2)
+      typescript: 5.4.2
+    dev: false
+
+  /@remix-run/cloudflare-workers@2.8.1(@cloudflare/workers-types@4.20240222.0)(typescript@5.4.2):
+    resolution: {integrity: sha512-T25y4o4H/IbNB+9BWOF7Rv/Ptx3IUqfNWRSl1GS/RzL2Cpd217ip8QSsY/x2YNR5yzEgkq/RNQx5a3pHsXj+Lg==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      '@cloudflare/workers-types': ^4.0.0
+      typescript: ^5.1.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@cloudflare/kv-asset-handler': 0.1.3
       '@cloudflare/workers-types': 4.20240222.0
       '@remix-run/cloudflare': 2.8.1(@cloudflare/workers-types@4.20240222.0)(typescript@5.4.2)
       typescript: 5.4.2
@@ -5504,6 +5523,17 @@ packages:
       '@types/mdast': 3.0.15
       mdast-util-to-hast: 12.3.0
       unified: 10.1.2
+
+  /remix-cloudflare-module-workers@1.0.0(@remix-run/cloudflare-workers@2.8.1)(@remix-run/cloudflare@2.8.1):
+    resolution: {integrity: sha512-du6a97Dvd6Qz8v0RFDeQmM1lNchou0tbB2iYUUKXcbZncZBCGXCOcvR5TMd5ZZwoOR4Bcm9IaB4ETwY6fmU1jg==}
+    peerDependencies:
+      '@remix-run/cloudflare': '>=1.13.0'
+      '@remix-run/cloudflare-workers': '>=1.13.0'
+    dependencies:
+      '@remix-run/cloudflare': 2.8.1(@cloudflare/workers-types@4.20240222.0)(typescript@5.4.2)
+      '@remix-run/cloudflare-workers': 2.8.1(@cloudflare/workers-types@4.20240222.0)(typescript@5.4.2)
+      typescript: 5.4.2
+    dev: false
 
   /remix-pwa@3.0.19(@remix-pwa/worker-runtime@2.0.8)(typescript@5.4.2)(vite@5.1.5)(wrangler@3.32.0):
     resolution: {integrity: sha512-tMvx7b0YlvUUrLHT1BLPpqCvGqxjLxlr6KX04iEWmBrzMXhZvb9/rSXnnly+MBZUSv54M7FIyOSjTQy4vFKCww==}

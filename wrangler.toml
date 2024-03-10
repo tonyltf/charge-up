@@ -1,6 +1,16 @@
 name = "charge-up"
 compatibility_date = "2024-03-04"
 
+account_id = "7870a3673bf60c2780a4a9678fa2d28e"
+
+main = "./build/index.js"
+
+[site]
+bucket = "./public"
+
+[build]
+command = "pnpm run build"
+
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
 # Docs: https://developers.cloudflare.com/workers/platform/environment-variables
