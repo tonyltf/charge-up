@@ -1,3 +1,6 @@
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/tonyltf/charge-up/main.svg)](https://results.pre-commit.ci/latest/github/tonyltf/charge-up/main)
+[![CodeFactor](https://www.codefactor.io/repository/github/tonyltf/charge-up/badge)](https://www.codefactor.io/repository/github/tonyltf/charge-up)
+
 # Welcome to Remix + Vite!
 
 📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
