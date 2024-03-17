@@ -3,14 +3,24 @@
   "name": "ChargeUp",
   "icons": [
     {
-      "src": "icons/android-chrome-192x192.png",
+      "src": "icons/icons-152x152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "icons/icons-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "icons/android-chrome-256x256.png",
+      "src": "icons/icons-384x384.png",
       "type": "image/png",
-      "sizes": "256x256"
+      "sizes": "384x384"
+    },
+    {
+      "src": "icons/icons-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "id": "/?source=pwa",
