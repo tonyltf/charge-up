@@ -1,0 +1,9 @@
+# Node modules
+/node_modules
+
+# Exclude build and dist folders
+/build
+/dist
+
+# Service worker
+/app/entry.worker.ts
